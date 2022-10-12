@@ -4,6 +4,7 @@
 
 ## Ссылка на проект
 
+https://pomazkovanton.github.io/lubimovka/
 
 ## Заказчик
 
@@ -36,5 +37,5 @@
 - 👨‍💻 [Антон Помазков](https://github.com/pomazkovanton)
 - 👩‍💻 [Анастасия Волокитина]()
 - 👨‍💻 [Василий Раздорский](https://github.com/VasilyRazdorsky)
-- 👨‍💻 [Дмитрий Ильин]()
+- 👨‍💻 [Дмитрий Ильин](https://github.com/Ilin-Dmitry)
 - 👨‍💻 [Евгений Женченко]()
