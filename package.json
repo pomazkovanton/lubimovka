@@ -1,0 +1,43 @@
+{
+  "name": "bike",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "lint:scss": "stylelint **/*.scss --fix",
+    "lint:js": "eslint ./scripts/**/*.{ts,js} --fix",
+    "format:js": "prettier --write ./scripts/**/*.{ts,js}",
+    "format:scss": "prettier --write **/*.scss",
+    "format:all": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "8",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.2",
+    "stylelint": "^14.8.5",
+    "stylelint-color-format": "^1.1.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-order": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
