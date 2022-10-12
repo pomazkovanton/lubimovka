@@ -11,7 +11,9 @@
     "format:js": "prettier --write ./scripts/**/*.{ts,js}",
     "format:scss": "prettier --write **/*.scss",
     "format:all": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -23,6 +25,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.0",
     "parcel-bundler": "^1.12.5",
