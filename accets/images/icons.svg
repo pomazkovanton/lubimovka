@@ -1,0 +1,21 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="arrow-45">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9084 5.05862L19.9084 6.08368L19.9084 14.2842L18.9144 14.2842L18.9144 6.75959L5.41259 20.2613L4.70549 19.5542L18.176 6.08368L10.7491 6.08368L10.7491 5.05862L18.9144 5.05862L19.9084 5.05862Z" fill="currentColor"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="arrow-down">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5234 21L11.7986 20.2752L6 14.4766L6.70287 13.7737L12.0235 19.0944L12.0235 0H13.0235L13.0235 19.0502L18.2752 13.7986L19 14.5234L13.2263 20.2971L12.5234 21Z" fill="currentColor"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="arrow-left">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.5234L4.72483 11.7986L10.5234 6L11.2263 6.70287L5.90563 12.0235L25 12.0235L25 13.0235L5.94976 13.0235L11.2014 18.2752L10.4766 19L4.70287 13.2263L4 12.5234Z" fill="currentColor"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="arrow-right">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 12.4766L20.2752 13.2014L14.4766 19L13.7737 18.2971L19.0944 12.9765L-3.63036e-07 12.9765L-3.10999e-07 11.9765L19.0502 11.9765L13.7986 6.72483L14.5234 6L20.2971 11.7737L21 12.4766Z" fill="currentColor"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="asterisk">
+    <path d="M0 11.1188L7.67717 13.7431L10.4331 13.8812L8.13648 15.6077L3.41207 22.4447L6.75853 25L11.4829 18.163L12.4672 15.4006L13.3858 18.232L18.1102 25L21.4567 22.4447L16.7979 15.6077L14.5669 13.9503L17.3885 13.8122L25 11.1878L23.7533 7.0442L16.0761 9.59945L13.7795 11.395L14.6325 8.42541V0H10.4987V8.42541L11.2861 11.326L8.92388 9.53039L1.31234 6.90608L0 11.1188Z" fill="currentColor"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="plus">
+    <rect x="12" y="6" width="1" height="13" fill="currentColor"></rect>
+    <rect x="19" y="12" width="1" height="13" transform="rotate(90 19 12)" fill="currentColor"></rect>
+  </symbol>
+</svg>
