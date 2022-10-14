@@ -1,0 +1,33 @@
+.text {
+  font-family: 'Formular', 'Helvetica', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--main-text-color);
+
+  &_accent {
+    font-family: 'NeueMachina', 'Helvetica', sans-serif;
+    font-weight: 400;
+  }
+
+  &_size {
+    &_xl {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &_l {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &_m {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &_s {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
