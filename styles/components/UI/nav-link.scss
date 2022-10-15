@@ -1,5 +1,7 @@
 .nav-link {
   position: relative;
+  display: inline-flex;
+  align-items: center;
   font-family: 'Formular', 'Helvetica', sans-serif;
   font-size: 16px;
   line-height: 1.38;
@@ -33,16 +35,9 @@
     border-bottom-right-radius: 200% 100%;
   }
 
-  &_style_uppercase {
-    display: inline-flex;
-    align-items: center;
+  &_uppercase {
     font-size: 14px;
     text-transform: uppercase;
-
-    & svg {
-      width: 1.79em;
-      height: 1.79em;
-    }
   }
 
   &_type_active {
@@ -71,5 +66,10 @@
       border-top-right-radius: 200% 100%;
       border-bottom-right-radius: 200% 100%;
     }
+  }
+
+  & svg {
+    width: 1.79em;
+    height: 1.79em;
   }
 }
