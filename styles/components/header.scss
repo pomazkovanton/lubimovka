@@ -1,4 +1,5 @@
 .header {
+  min-width: 414px;
   border-bottom: 1px solid var(--main-dark-color);
 
   @media screen and (max-width: 1025px) {
