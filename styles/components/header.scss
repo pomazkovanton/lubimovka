@@ -21,8 +21,14 @@
   }
 
   &__nav {
+
     @media screen and (max-width: 1025px) {
+      display: none;
       flex-basis: 100%;
+    }
+
+    &_opened {
+      display: block;
     }
   }
 
