@@ -1,12 +1,12 @@
 .text {
   margin: 0;
-  font-family: 'Formular', 'Helvetica', sans-serif;
+  font-family: var(--second-font);
   font-weight: 300;
   font-style: normal;
-  color: var(--main-text-color);
+  color: var(--main-dark-color);
 
   &_accent {
-    font-family: 'NeueMachina', 'Helvetica', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
   }
 
