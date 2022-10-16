@@ -1,0 +1,45 @@
+.card-piece {
+  max-width: 240px;
+
+  &__link-wrapper {
+    display: none;
+  }
+
+  /* stylelint-disable-next-line order/order */
+  &:hover &__link-wrapper {
+    display: block;
+  }
+
+  &__title {
+    padding: 24px;
+  }
+
+  &__cover {
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--accent-bg-color);
+  }
+
+  &__autor-list {
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__autor {
+    display: block;
+    width: max-content;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--main-white-color);
+      background-color: var(--main-text-color);
+    }
+  }
+
+  &__city {
+    margin-top: 5px;
+  }
+}
