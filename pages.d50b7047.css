@@ -322,14 +322,14 @@ template {
   font-family: "Formular";
   font-weight: 300;
   font-style: normal;
-  src: url("/formular-light.66e5e21b.woff2") format("woff2"), url("/formular-light.28397d54.woff") format("woff");
+  src: url("/formular-light.7396d89b.woff2") format("woff2"), url("/formular-light.f44893e0.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "NeueMachina";
   font-weight: 400;
   font-style: normal;
-  src: url("/PPNeueMachina-Regular.b2a90592.woff2") format("woff2"), url("/PPNeueMachina-Regular.129423ad.woff") format("woff");
+  src: url("/PPNeueMachina-Regular.60f1284f.woff2") format("woff2"), url("/PPNeueMachina-Regular.90e43790.woff") format("woff");
   font-display: swap;
 }
 .text {
@@ -688,4 +688,4 @@ template {
   display: block;
 }
 
-/*# sourceMappingURL=/pages.1a2cda2f.css.map */
+/*# sourceMappingURL=/pages.d50b7047.css.map */
