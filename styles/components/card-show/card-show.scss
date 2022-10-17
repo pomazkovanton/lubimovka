@@ -1,0 +1,68 @@
+.card-show {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  font-family: var(--second-font);
+  color: var(--main-dark-color);
+
+  &__poster {
+    width: 120px;
+    height: 161px;
+    object-fit: cover;
+  }
+
+  &__info {
+    margin-left: 31px;
+    width: 269px;
+  }
+
+  &__date {
+    display: flex;
+    max-width: 196px;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-family: var(--main-font);
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__authors {
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 1.38;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &__links {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    a {
+      margin-top: 16px;
+      width: 100%;
+    }
+  }
+}
