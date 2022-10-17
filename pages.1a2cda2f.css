@@ -566,8 +566,8 @@ template {
 .header__container {
   margin: auto;
   padding-top: 11px;
-  padding-right: 20px;
-  padding-left: 30px;
+  padding-right: 24px;
+  padding-left: 24px;
   display: flex;
   max-width: 1390px;
   justify-content: space-between;
@@ -690,6 +690,28 @@ template {
 }
 .header__nav-ico-cross_show {
   display: block;
+}
+
+.about {
+  padding: 80px 24px 120px 24px;
+  background-color: var(--accent-bg-color);
+  min-width: 414px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1025px) {
+  .about {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+}
+.about__wrapper {
+  max-width: 895px;
+  margin: auto;
+}
+.about__text {
+  padding-left: 60px;
+  margin-top: 20px;
+  max-width: 580px;
 }
 
 /*# sourceMappingURL=/pages.1a2cda2f.css.map */
