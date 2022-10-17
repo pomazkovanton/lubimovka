@@ -1,0 +1,22 @@
+.about {
+  padding: 80px 24px 120px 24px;
+  background-color: var(--accent-bg-color);
+  min-width: 414px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1025px) {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  &__wrapper {
+    max-width: 895px;
+    margin: auto;
+  }
+
+  &__text {
+    padding-left: 60px;
+    margin-top: 20px;
+    max-width: 580px;
+  }
+}
