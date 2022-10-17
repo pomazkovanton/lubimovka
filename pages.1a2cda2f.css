@@ -550,6 +550,10 @@ template {
   margin-top: 5px;
 }
 
+.page {
+  background-color: var(--main-bg-color);
+}
+
 .header {
   min-width: 414px;
   border-bottom: 1px solid var(--main-dark-color);
