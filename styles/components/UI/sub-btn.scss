@@ -34,15 +34,13 @@
 
     &::before {
       box-sizing: border-box;
-      width: 100%;
+      width: calc(100% + 16px);
     }
   }
 
   & svg {
-    display: block;
     width: 16px;
     height: 16px;
-    background-color: rgb(255 255 255);
   }
 
 }
