@@ -66,6 +66,11 @@
       padding-right: 10px;
       border-left: 1px solid var(--main-dark-color);
     }
+
+    &_full {
+      padding-left: 20px;
+      border: 1px solid var(--main-dark-color);
+    }
   }
 
   svg {
