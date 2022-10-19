@@ -21,4 +21,11 @@
       line-height: 38px;
     }
   }
+
+  &_center {
+    margin: auto;
+    padding-right: 145px;
+    box-sizing: border-box;
+    max-width: 715px;
+  }
 }
