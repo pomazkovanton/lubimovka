@@ -1,0 +1,83 @@
+.hero {
+  padding-top: 60px;
+  min-width: 414px;
+
+  @media screen and (max-width: 1025px) {
+    padding-top: 55px;
+  }
+
+  &__container {
+    position: relative;
+    margin: auto;
+    padding-left: 24px;
+    box-sizing: border-box;
+    max-width: 1440px;
+
+    @media screen and (max-width: 1025px) {
+      position: static;
+      padding: 0;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+
+    @media screen and (max-width: 1025px) {
+      top: 15px;
+      left: 90px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    row-gap: 60px;
+    column-gap: 120px;
+    grid-template-columns: 1fr minmax(min-content, max-content);
+
+    @media screen and (max-width: 1025px) {
+      display: block;
+    }
+  }
+
+  &__title {
+    max-width: 450px;
+    grid-column: 2 / span 1;
+
+    @media screen and (max-width: 1025px) {
+      padding: 0 24px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &__text {
+    max-width: 420px;
+    grid-row: 2 / span 1;
+    justify-self: end;
+
+    @media screen and (max-width: 1025px) {
+      margin-top: 25px;
+      padding-right: 24px;
+      padding-left: 84px;
+      max-width: 100%;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+
+    @media screen and (max-width: 1025px) {
+      margin-top: 35px;
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
