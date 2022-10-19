@@ -750,96 +750,11 @@ template {
   display: block;
 }
 
-.hero {
-  padding-top: 60px;
-  min-width: 414px;
-}
-@media screen and (max-width: 1025px) {
-  .hero {
-    padding-top: 55px;
-  }
-}
-.hero__container {
-  position: relative;
-  margin: auto;
-  padding-left: 24px;
-  box-sizing: border-box;
-  max-width: 1440px;
-}
-@media screen and (max-width: 1025px) {
-  .hero__container {
-    position: static;
-    padding: 0;
-  }
-}
-.hero__button {
-  position: absolute;
-  top: -30px;
-  left: 30px;
-}
-@media screen and (max-width: 1025px) {
-  .hero__button {
-    top: 15px;
-    left: 90px;
-  }
-}
-.hero__wrapper {
-  display: grid;
-  row-gap: 60px;
-  column-gap: 120px;
-  grid-template-columns: 1fr minmax(min-content, max-content);
-}
-@media screen and (max-width: 1025px) {
-  .hero__wrapper {
-    display: block;
-  }
-}
-.hero__title {
-  max-width: 450px;
-  grid-column: 2/span 1;
-}
-@media screen and (max-width: 1025px) {
-  .hero__title {
-    padding: 0 24px;
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-.hero__text {
-  max-width: 420px;
-  grid-row: 2/span 1;
-  justify-self: end;
-}
-@media screen and (max-width: 1025px) {
-  .hero__text {
-    margin-top: 25px;
-    padding-right: 24px;
-    padding-left: 84px;
-    max-width: 100%;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-.hero__image {
-  width: 100%;
-  max-width: 720px;
-  height: auto;
-  grid-row: 2/span 1;
-  grid-column: 2/span 1;
-}
-@media screen and (max-width: 1025px) {
-  .hero__image {
-    margin-top: 35px;
-    display: block;
-    max-width: 100%;
-  }
-}
-
 .about {
-  padding: 80px 24px 120px;
-  box-sizing: border-box;
-  min-width: 414px;
+  padding: 80px 24px 120px 24px;
   background-color: var(--accent-bg-color);
+  min-width: 414px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 1025px) {
   .about {
@@ -848,12 +763,12 @@ template {
   }
 }
 .about__wrapper {
-  margin: auto;
   max-width: 895px;
+  margin: auto;
 }
 .about__text {
-  margin-top: 20px;
   padding-left: 60px;
+  margin-top: 20px;
   max-width: 580px;
 }
 
