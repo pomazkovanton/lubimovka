@@ -1,8 +1,8 @@
 .about {
-  padding: 80px 24px 120px 24px;
-  background-color: var(--accent-bg-color);
-  min-width: 414px;
+  padding: 80px 24px 120px;
   box-sizing: border-box;
+  min-width: 414px;
+  background-color: var(--accent-bg-color);
 
   @media screen and (max-width: 1025px) {
     padding-top: 55px;
@@ -10,13 +10,13 @@
   }
 
   &__wrapper {
-    max-width: 895px;
     margin: auto;
+    max-width: 895px;
   }
 
   &__text {
-    padding-left: 60px;
     margin-top: 20px;
+    padding-left: 60px;
     max-width: 580px;
   }
 }
