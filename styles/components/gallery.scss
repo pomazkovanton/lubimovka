@@ -1,0 +1,22 @@
+.gallery {
+  &__container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  &__photos {
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+
+  &__photo {
+    width: 100%;
+    max-width: 359px;
+    height: 100%;
+    max-height: 251px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
