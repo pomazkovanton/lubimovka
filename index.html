@@ -13,6 +13,10 @@
     <meta name="keywords" content="Любимовка, театр, спектакль, постановка, читка, пьеса" />
     <link rel="shortcut icon" href="./accets/images/main-logo-small.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/pages/index.scss" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   </head>
   <body class="page">
     <header class="header">
@@ -96,9 +100,9 @@
         </div>
       </section>
       <section class="pieces">
-        <h2 class="title title_size_m title_center">Заголовок блока с&nbsp;пьесами</h2>
+        <h2 class="pieces__title title title_size_m title_center">Заголовок блока с&nbsp;пьесами</h2>
         <div class="pieces__card-wrapper">
-          <article class="card-piece">
+          <article class="pieces__card card-piece">
             <div class="card-piece__cover">
               <h3 class="card-piece__title text text_accent text_size_l">Солнечная линия</h3>
               <div class="card-piece__link-wrapper">
@@ -127,7 +131,7 @@
             <p class="card-piece__city text text_size_m">Санкт-Петербург</p>
             <p class="text text_size_m">2020</p>
           </article>
-          <article class="card-piece">
+          <article class="pieces__card card-piece">
             <div class="card-piece__cover">
               <h3 class="card-piece__title text text_accent text_size_l">МАМА</h3>
               <div class="card-piece__link-wrapper">
@@ -156,7 +160,7 @@
             <p class="card-piece__city text text_size_m">Санкт-Петербург</p>
             <p class="text text_size_m">2020</p>
           </article>
-          <article class="card-piece">
+          <article class="pieces__card card-piece">
             <div class="card-piece__cover">
               <h3 class="card-piece__title text text_accent text_size_l">Конкретные разговоры пожилых супругов ни о чём</h3>
               <div class="card-piece__link-wrapper">
@@ -185,9 +189,9 @@
             <p class="card-piece__city text text_size_m">Санкт-Петербург</p>
             <p class="text text_size_m">2020</p>
           </article>
-          <article class="card-piece">
+          <article class="pieces__card card-piece">
             <div class="card-piece__cover">
-              <h3 class="card-piece__title text text_accent text_size_l">Опус ДНК</h3>
+              <h3 class="card-piece__title text text_accent text_size_l">Конкретные разговоры пожилых супругов ни о чём</h3>
               <div class="card-piece__link-wrapper">
                 <a class="button button_size_big" href="#">
                   Смотреть читку
@@ -214,9 +218,9 @@
             <p class="card-piece__city text text_size_m">Санкт-Петербург</p>
             <p class="text text_size_m">2020</p>
           </article>
-          <article class="card-piece">
+          <article class="pieces__card card-piece">
             <div class="card-piece__cover">
-              <h3 class="card-piece__title text text_accent text_size_l">МАМА</h3>
+              <h3 class="card-piece__title text text_accent text_size_l">Опус ДНК</h3>
               <div class="card-piece__link-wrapper">
                 <a class="button button_size_big" href="#">
                   Смотреть читку
@@ -274,5 +278,8 @@
       </section>
     </main>
     <script type="module" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
