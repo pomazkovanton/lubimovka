@@ -4,6 +4,10 @@
     "eslint ./scripts/**/*.{ts,js} --fix"
   ],
   "**/*.scss": [
+    "prettier --config .prettierrc --write",
     "stylelint --fix"
+  ],
+  "**/*.html": [
+    "prettier --config .prettierrc --write",
   ]
 }
