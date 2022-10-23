@@ -155,14 +155,14 @@ template {
   font-family: Formular;
   font-weight: 300;
   font-style: normal;
-  src: url(/lubimovka/formular-light.7396d89b.woff2) format('woff2'), url(/lubimovka/formular-light.f44893e0.woff) format('woff');
+  src: url(lubimovka/formular-light.7396d89b.woff2) format('woff2'), url(lubimovka/formular-light.f44893e0.woff) format('woff');
   font-display: swap;
 }
 @font-face {
   font-family: NeueMachina;
   font-weight: 400;
   font-style: normal;
-  src: url(/lubimovka/PPNeueMachina-Regular.60f1284f.woff2) format('woff2'), url(/lubimovka/PPNeueMachina-Regular.90e43790.woff) format('woff');
+  src: url(lubimovka/PPNeueMachina-Regular.60f1284f.woff2) format('woff2'), url(lubimovka/PPNeueMachina-Regular.90e43790.woff) format('woff');
   font-display: swap;
 }
 .text {
@@ -373,9 +373,6 @@ template {
 .card-piece__city {
   margin-top: 5px;
 }
-.page {
-  background-color: var(--main-bg-color);
-}
 .header {
   min-width: 414px;
   border-bottom: 1px solid var(--main-dark-color);
@@ -388,8 +385,8 @@ template {
 .header__container {
   margin: auto;
   padding-top: 11px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 20px;
+  padding-left: 30px;
   display: flex;
   max-width: 1390px;
   justify-content: space-between;
@@ -514,25 +511,4 @@ template {
 .header__nav-ico-cross_show {
   display: block;
 }
-.about {
-  padding: 80px 24px 120px;
-  background-color: var(--accent-bg-color);
-  min-width: 414px;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 1025px) {
-  .about {
-    padding-top: 55px;
-    padding-bottom: 70px;
-  }
-}
-.about__wrapper {
-  max-width: 895px;
-  margin: auto;
-}
-.about__text {
-  padding-left: 60px;
-  margin-top: 20px;
-  max-width: 580px;
-}
-/*# sourceMappingURL=/lubimovka/pages.6722bf1f.css.map */
+/*# sourceMappingURL=lubimovka/pages.d396ed9c.css.map */

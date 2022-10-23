@@ -155,14 +155,14 @@ template {
   font-family: Formular;
   font-weight: 300;
   font-style: normal;
-  src: url(/lubimovka/formular-light.7396d89b.woff2) format('woff2'), url(/lubimovka/formular-light.f44893e0.woff) format('woff');
+  src: url(/formular-light.7396d89b.woff2) format('woff2'), url(/formular-light.f44893e0.woff) format('woff');
   font-display: swap;
 }
 @font-face {
   font-family: NeueMachina;
   font-weight: 400;
   font-style: normal;
-  src: url(/lubimovka/PPNeueMachina-Regular.60f1284f.woff2) format('woff2'), url(/lubimovka/PPNeueMachina-Regular.90e43790.woff) format('woff');
+  src: url(/PPNeueMachina-Regular.60f1284f.woff2) format('woff2'), url(/PPNeueMachina-Regular.90e43790.woff) format('woff');
   font-display: swap;
 }
 .text {
@@ -373,61 +373,6 @@ template {
 .card-piece__city {
   margin-top: 5px;
 }
-.card-show {
-  display: inline-flex;
-  overflow: hidden;
-  max-width: 420px;
-  font-family: var(--second-font);
-  color: var(--main-dark-color);
-}
-.card-show__poster {
-  width: 120px;
-  height: 161px;
-  object-fit: cover;
-  object-position: center;
-}
-.card-show__info {
-  margin-left: 31px;
-  max-width: 269px;
-}
-.card-show__date {
-  display: flex;
-  max-width: 196px;
-  justify-content: space-between;
-}
-.card-show__date .text {
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-.card-show__title {
-  margin: 0 0 16px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-transform: uppercase;
-  text-overflow: ellipsis;
-}
-.card-show__authors {
-  padding-left: 50px;
-  text-indent: -20px;
-}
-.card-show__description {
-  margin: 20px 0;
-  font-size: 14px;
-  line-height: 1.21;
-  white-space: pre-line;
-}
-.card-show__links {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 16px;
-}
-.card-show__links a {
-  width: 100%;
-}
-.page {
-  background-color: var(--main-bg-color);
-}
 .header {
   min-width: 414px;
   border-bottom: 1px solid var(--main-dark-color);
@@ -440,8 +385,8 @@ template {
 .header__container {
   margin: auto;
   padding-top: 11px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 20px;
+  padding-left: 30px;
   display: flex;
   max-width: 1390px;
   justify-content: space-between;
@@ -566,25 +511,4 @@ template {
 .header__nav-ico-cross_show {
   display: block;
 }
-.about {
-  padding: 80px 24px 120px;
-  background-color: var(--accent-bg-color);
-  min-width: 414px;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 1025px) {
-  .about {
-    padding-top: 55px;
-    padding-bottom: 70px;
-  }
-}
-.about__wrapper {
-  max-width: 895px;
-  margin: auto;
-}
-.about__text {
-  padding-left: 60px;
-  margin-top: 20px;
-  max-width: 580px;
-}
-/*# sourceMappingURL=/lubimovka/pages.a9bbe4af.css.map */
+/*# sourceMappingURL=/pages.6930b12d.css.map */
