@@ -1,0 +1,19 @@
+.pieces {
+  padding: 0 24px;
+
+  &__card-wrapper {
+    margin: 48px auto 0;
+    padding: 0 36px;
+    display: grid;
+    max-width: 1320px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    justify-items: center;
+
+    @media screen and (max-width: 414px) {
+      & {
+        padding: 0;
+      }
+    }
+  }
+}
