@@ -1,5 +1,7 @@
 .pieces {
   padding-left: 24px;
+  overflow: hidden;
+  min-width: 414px;
 
   &__title {
     @media screen and (max-width: 1025px) {
@@ -13,14 +15,20 @@
   &__card-wrapper {
     margin: 50px auto 0;
     display: flex;
-    max-width: 1320px;
+    width: 1320px;
+    min-width: 0;
     justify-content: flex-end;
     gap: 30px;
+
+    @media screen and (max-width: 1280px) {
+      & {
+        justify-content: flex-start;
+      }
+    }
 
     @media screen and (max-width: 1110px) {
       & {
         margin-top: 30px;
-        justify-content: flex-start;
       }
     }
   }

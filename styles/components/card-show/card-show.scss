@@ -5,6 +5,12 @@
   font-family: var(--second-font);
   color: var(--main-dark-color);
 
+  @media screen and (max-width: 769px) {
+    & {
+      margin-top: 30px;
+    }
+  }
+
   &__poster {
     width: 120px;
     height: 161px;

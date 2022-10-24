@@ -3,6 +3,12 @@
 
   &__link-wrapper {
     display: none;
+
+    @media screen and (max-width: 769px) {
+      & {
+        display: block;
+      }
+    }
   }
 
   /* stylelint-disable-next-line order/order */
@@ -20,6 +26,12 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--accent-bg-color);
+
+    @media screen and (max-width: 769px) {
+      & {
+        min-height: 340px;
+      }
+    }
   }
 
   &__autor-list {
