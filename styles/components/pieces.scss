@@ -1,6 +1,7 @@
 .pieces {
   padding-left: 24px;
   overflow: hidden;
+  box-sizing: border-box;
   min-width: 414px;
 
   &__title {
