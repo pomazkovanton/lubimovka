@@ -1,5 +1,7 @@
 .subscribe {
   padding: 71px 24px 145px;
+  box-sizing: border-box;
+  min-width: 414px;
   background-color: var(--accent-bg-color);
 
   @media screen and (max-width: 1025px) {
