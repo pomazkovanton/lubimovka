@@ -144,7 +144,7 @@ template {
   display: none;
 }
 :root {
-  --main-bg-color: #ecebe8;
+  --main-bg-color: #e5e5e5;
   --accent-bg-color: #b7c09d;
   --main-dark-color: #242424;
   --main-light-color: #fff;
@@ -274,12 +274,6 @@ template {
   font-size: 36px;
   line-height: 38px;
 }
-.title_center {
-  margin: auto;
-  padding-right: 145px;
-  box-sizing: border-box;
-  max-width: 715px;
-}
 .button {
   position: relative;
   z-index: 1;
@@ -338,10 +332,6 @@ template {
 .button_border_left {
   padding-right: 10px;
   border-left: 1px solid var(--main-dark-color);
-}
-.button_border_full {
-  padding-left: 20px;
-  border: 1px solid var(--main-dark-color);
 }
 .button svg {
   width: 25px;
@@ -576,95 +566,11 @@ template {
 .header__nav-ico-cross_show {
   display: block;
 }
-.hero {
-  padding-top: 60px;
-  min-width: 414px;
-}
-@media screen and (max-width: 1025px) {
-  .hero {
-    padding-top: 55px;
-  }
-}
-.hero__container {
-  position: relative;
-  margin: auto;
-  padding-left: 24px;
-  box-sizing: border-box;
-  max-width: 1440px;
-}
-@media screen and (max-width: 1025px) {
-  .hero__container {
-    position: static;
-    padding: 0;
-  }
-}
-.hero__button {
-  position: absolute;
-  top: -30px;
-  left: 30px;
-}
-@media screen and (max-width: 1025px) {
-  .hero__button {
-    top: 15px;
-    left: 90px;
-  }
-}
-.hero__wrapper {
-  display: grid;
-  row-gap: 60px;
-  column-gap: 120px;
-  grid-template-columns: 1fr minmax(min-content, max-content);
-}
-@media screen and (max-width: 1025px) {
-  .hero__wrapper {
-    display: block;
-  }
-}
-.hero__title {
-  max-width: 450px;
-  grid-column: 2 / span 1;
-}
-@media screen and (max-width: 1025px) {
-  .hero__title {
-    padding: 0 24px;
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-.hero__text {
-  max-width: 420px;
-  grid-row: 2 / span 1;
-  justify-self: end;
-}
-@media screen and (max-width: 1025px) {
-  .hero__text {
-    margin-top: 25px;
-    padding-right: 24px;
-    padding-left: 84px;
-    max-width: 100%;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-.hero__image {
-  width: 100%;
-  max-width: 720px;
-  height: auto;
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-}
-@media screen and (max-width: 1025px) {
-  .hero__image {
-    margin-top: 35px;
-    display: block;
-    max-width: 100%;
-  }
-}
 .about {
   padding: 80px 24px 120px;
-  box-sizing: border-box;
-  min-width: 414px;
   background-color: var(--accent-bg-color);
+  min-width: 414px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 1025px) {
   .about {
@@ -673,77 +579,12 @@ template {
   }
 }
 .about__wrapper {
+  max-width: 895px;
   margin: auto;
-  max-width: 715px;
 }
 .about__text {
-  margin-top: 20px;
   padding-left: 60px;
+  margin-top: 20px;
   max-width: 580px;
 }
-.single-video {
-  padding: 98px 0;
-}
-.single-video__wrapper {
-  margin: 0 auto;
-  max-width: 716px;
-}
-.single-video__video {
-  margin: 37px 0 55px;
-  width: 716px;
-  height: 403px;
-  border: 0;
-}
-.subscribe {
-  padding: 71px 24px 145px;
-  background-color: var(--accent-bg-color);
-}
-@media screen and (max-width: 1025px) {
-  .subscribe {
-    padding: 56px 24px 72px;
-  }
-}
-.subscribe__container {
-  margin: 20px auto 0;
-  padding-left: 90px;
-  display: flex;
-  box-sizing: border-box;
-  max-width: 900px;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 1025px) {
-  .subscribe__container {
-    margin: 20px 0 0;
-    padding-left: 60px;
-  }
-}
-@media screen and (max-width: 769px) {
-  .subscribe__container {
-    display: block;
-  }
-}
-.subscribe__text {
-  max-width: 410px;
-}
-.subscribe__button {
-  max-width: 298px;
-}
-@media screen and (max-width: 769px) {
-  .subscribe__button {
-    margin-top: 16px;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .subscribe__title {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 769px) {
-  .subscribe__title {
-    padding: 0;
-    font-size: 28px;
-    line-height: 32px;
-  }
-}
-/*# sourceMappingURL=/lubimovka/pages.4cd1bf96.css.map */
+/*# sourceMappingURL=/lubimovka/pages.a9bbe4af.css.map */

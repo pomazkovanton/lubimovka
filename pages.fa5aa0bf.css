@@ -373,6 +373,9 @@ template {
 .card-piece__city {
   margin-top: 5px;
 }
+.page {
+  background-color: var(--main-bg-color);
+}
 .header {
   min-width: 414px;
   border-bottom: 1px solid var(--main-dark-color);
@@ -511,4 +514,4 @@ template {
 .header__nav-ico-cross_show {
   display: block;
 }
-/*# sourceMappingURL=/lubimovka/pages.41654b54.css.map */
+/*# sourceMappingURL=/lubimovka/pages.fa5aa0bf.css.map */

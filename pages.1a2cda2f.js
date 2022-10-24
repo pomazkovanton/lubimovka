@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\accets\\fonts\\formular-light.woff2":[["formular-light.66e5e21b.woff2","accets/fonts/formular-light.woff2"],"accets/fonts/formular-light.woff2"],"./..\\..\\accets\\fonts\\formular-light.woff":[["formular-light.28397d54.woff","accets/fonts/formular-light.woff"],"accets/fonts/formular-light.woff"],"./..\\..\\accets\\fonts\\PPNeueMachina-Regular.woff2":[["PPNeueMachina-Regular.b2a90592.woff2","accets/fonts/PPNeueMachina-Regular.woff2"],"accets/fonts/PPNeueMachina-Regular.woff2"],"./..\\..\\accets\\fonts\\PPNeueMachina-Regular.woff":[["PPNeueMachina-Regular.129423ad.woff","accets/fonts/PPNeueMachina-Regular.woff"],"accets/fonts/PPNeueMachina-Regular.woff"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../../accets/fonts/formular-light.woff2":[["formular-light.66e5e21b.woff2","accets/fonts/formular-light.woff2"],"accets/fonts/formular-light.woff2"],"./../../accets/fonts/formular-light.woff":[["formular-light.28397d54.woff","accets/fonts/formular-light.woff"],"accets/fonts/formular-light.woff"],"./../../accets/fonts/PPNeueMachina-Regular.woff2":[["PPNeueMachina-Regular.b2a90592.woff2","accets/fonts/PPNeueMachina-Regular.woff2"],"accets/fonts/PPNeueMachina-Regular.woff2"],"./../../accets/fonts/PPNeueMachina-Regular.woff":[["PPNeueMachina-Regular.129423ad.woff","accets/fonts/PPNeueMachina-Regular.woff"],"accets/fonts/PPNeueMachina-Regular.woff"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64622" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38761" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
