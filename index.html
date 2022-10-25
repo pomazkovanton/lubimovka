@@ -79,12 +79,17 @@
       <section class="single-video">
         <div class="single-video__wrapper">
           <h2 class="title title_size_m">Заголовок блока с видео</h2>
-          <iframe
-            class="single-video__video"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="video">
+            <iframe
+              id="player"
+              class="video__content"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="video__cover"><img src="./accets/images/play-btn.svg" alt="" /></div>
+          </div>
+
           <p class="single-video__text text text_size_l">
             Из этого следует два вывода: с одной стороны, искусство не должно быть равно реальности, потому что иначе оно не будет искусством, с другой стороны – оно
             должно быть все-таки подобно реальности, иначе мы ничего не поймем, не подключимся и не распознаем замыслы автора. Мне нравится такое определение, что один из
@@ -311,5 +316,6 @@
       </section>
     </main>
     <script type="module" src="./scripts/index.js"></script>
+    <script src="./scripts/video.js"></script>
   </body>
 </html>
