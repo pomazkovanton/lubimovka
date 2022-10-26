@@ -117,79 +117,31 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"scripts/video.js":[function(require,module,exports) {
+/* eslint-disable linebreak-style */
+var videos = document.querySelectorAll('.video');
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+function startVideo(videoContent, videoCover) {
+  // eslint-disable-next-line no-param-reassign
+  videoCover.style.display = 'none'; // eslint-disable-next-line no-param-reassign
 
-  return bundleURL;
+  videoContent.src += '?autoplay=1';
 }
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
+function enableVideoCover(video) {
+  var videoContent = video.querySelector('.video__content');
+  var videoCover = video.querySelector('.video__cover');
+  var videoId = videoContent.src.slice(30, 41);
+  video.addEventListener('click', function () {
+    return startVideo(videoContent, videoCover);
+  });
+  videoCover.style.backgroundImage = "url(http://img.youtube.com/vi/".concat(videoId, "/0.jpg)");
 }
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/pages/index.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\..\\accets\\fonts\\formular-light.woff2":[["formular-light.66e5e21b.woff2","accets/fonts/formular-light.woff2"],"accets/fonts/formular-light.woff2"],"./..\\..\\accets\\fonts\\formular-light.woff":[["formular-light.28397d54.woff","accets/fonts/formular-light.woff"],"accets/fonts/formular-light.woff"],"./..\\..\\accets\\fonts\\PPNeueMachina-Regular.woff2":[["PPNeueMachina-Regular.b2a90592.woff2","accets/fonts/PPNeueMachina-Regular.woff2"],"accets/fonts/PPNeueMachina-Regular.woff2"],"./..\\..\\accets\\fonts\\PPNeueMachina-Regular.woff":[["PPNeueMachina-Regular.129423ad.woff","accets/fonts/PPNeueMachina-Regular.woff"],"accets/fonts/PPNeueMachina-Regular.woff"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+videos.forEach(function (video) {
+  enableVideoCover(video);
+});
+},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -393,5 +345,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/pages.1a2cda2f.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/video.js"], null)
+//# sourceMappingURL=/video.7a59c843.js.map

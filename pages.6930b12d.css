@@ -155,14 +155,14 @@ template {
   font-family: Formular;
   font-weight: 300;
   font-style: normal;
-  src: url(/lubimovka/formular-light.7396d89b.woff2) format('woff2'), url(/lubimovka/formular-light.f44893e0.woff) format('woff');
+  src: url(/formular-light.7396d89b.woff2) format('woff2'), url(/formular-light.f44893e0.woff) format('woff');
   font-display: swap;
 }
 @font-face {
   font-family: NeueMachina;
   font-weight: 400;
   font-style: normal;
-  src: url(/lubimovka/PPNeueMachina-Regular.60f1284f.woff2) format('woff2'), url(/lubimovka/PPNeueMachina-Regular.90e43790.woff) format('woff');
+  src: url(/PPNeueMachina-Regular.60f1284f.woff2) format('woff2'), url(/PPNeueMachina-Regular.90e43790.woff) format('woff');
   font-display: swap;
 }
 .text {
@@ -333,10 +333,6 @@ template {
   padding-right: 10px;
   border-left: 1px solid var(--main-dark-color);
 }
-.button_border_full {
-  padding-left: 20px;
-  border: 1px solid var(--main-dark-color);
-}
 .button svg {
   width: 25px;
   height: 25px;
@@ -377,61 +373,6 @@ template {
 .card-piece__city {
   margin-top: 5px;
 }
-.card-show {
-  display: inline-flex;
-  overflow: hidden;
-  max-width: 420px;
-  font-family: var(--second-font);
-  color: var(--main-dark-color);
-}
-.card-show__poster {
-  width: 120px;
-  height: 161px;
-  object-fit: cover;
-  object-position: center;
-}
-.card-show__info {
-  margin-left: 31px;
-  max-width: 269px;
-}
-.card-show__date {
-  display: flex;
-  max-width: 196px;
-  justify-content: space-between;
-}
-.card-show__date .text {
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-.card-show__title {
-  margin: 0 0 16px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-transform: uppercase;
-  text-overflow: ellipsis;
-}
-.card-show__authors {
-  padding-left: 50px;
-  text-indent: -20px;
-}
-.card-show__description {
-  margin: 20px 0;
-  font-size: 14px;
-  line-height: 1.21;
-  white-space: pre-line;
-}
-.card-show__links {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 16px;
-}
-.card-show__links a {
-  width: 100%;
-}
-.page {
-  background-color: var(--main-bg-color);
-}
 .header {
   min-width: 414px;
   border-bottom: 1px solid var(--main-dark-color);
@@ -444,8 +385,8 @@ template {
 .header__container {
   margin: auto;
   padding-top: 11px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 20px;
+  padding-left: 30px;
   display: flex;
   max-width: 1390px;
   justify-content: space-between;
@@ -570,122 +511,4 @@ template {
 .header__nav-ico-cross_show {
   display: block;
 }
-.hero {
-  padding-top: 60px;
-  min-width: 414px;
-}
-@media screen and (max-width: 1025px) {
-  .hero {
-    padding-top: 55px;
-  }
-}
-.hero__container {
-  position: relative;
-  margin: auto;
-  padding-left: 24px;
-  box-sizing: border-box;
-  max-width: 1440px;
-}
-@media screen and (max-width: 1025px) {
-  .hero__container {
-    position: static;
-    padding: 0;
-  }
-}
-.hero__button {
-  position: absolute;
-  top: -30px;
-  left: 30px;
-}
-@media screen and (max-width: 1025px) {
-  .hero__button {
-    top: 15px;
-    left: 90px;
-  }
-}
-.hero__wrapper {
-  display: grid;
-  row-gap: 60px;
-  column-gap: 120px;
-  grid-template-columns: 1fr minmax(min-content, max-content);
-}
-@media screen and (max-width: 1025px) {
-  .hero__wrapper {
-    display: block;
-  }
-}
-.hero__title {
-  max-width: 450px;
-  grid-column: 2 / span 1;
-}
-@media screen and (max-width: 1025px) {
-  .hero__title {
-    padding: 0 24px;
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-.hero__text {
-  max-width: 420px;
-  grid-row: 2 / span 1;
-  justify-self: end;
-}
-@media screen and (max-width: 1025px) {
-  .hero__text {
-    margin-top: 25px;
-    padding-right: 24px;
-    padding-left: 84px;
-    max-width: 100%;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-.hero__image {
-  width: 100%;
-  max-width: 720px;
-  height: auto;
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-}
-@media screen and (max-width: 1025px) {
-  .hero__image {
-    margin-top: 35px;
-    display: block;
-    max-width: 100%;
-  }
-}
-.about {
-  padding: 80px 24px 120px;
-  box-sizing: border-box;
-  min-width: 414px;
-  background-color: var(--accent-bg-color);
-}
-@media screen and (max-width: 1025px) {
-  .about {
-    padding-top: 55px;
-    padding-bottom: 70px;
-  }
-}
-.about__wrapper {
-  margin: auto;
-  max-width: 895px;
-}
-.about__text {
-  margin-top: 20px;
-  padding-left: 60px;
-  max-width: 580px;
-}
-.single-video {
-  padding: 98px 0;
-}
-.single-video__wrapper {
-  margin: 0 auto;
-  max-width: 716px;
-}
-.single-video__video {
-  margin: 37px 0 55px;
-  width: 716px;
-  height: 403px;
-  border: 0;
-}
-/*# sourceMappingURL=/lubimovka/pages.367a05fc.css.map */
+/*# sourceMappingURL=/pages.6930b12d.css.map */

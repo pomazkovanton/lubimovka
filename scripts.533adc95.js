@@ -106,4 +106,4 @@ parcelRequire = (function (e, r, t, n) {
   ['g2Hq'],
   null
 );
-//# sourceMappingURL=/lubimovka/scripts.e7c9c750.js.map
+//# sourceMappingURL=/lubimovka/scripts.533adc95.js.map
