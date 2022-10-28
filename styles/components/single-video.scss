@@ -1,11 +1,7 @@
 .single-video {
-  padding: 98px 24px;
+  padding: 0 24px;
   box-sizing: border-box;
   min-width: 414px;
-
-  @media screen and (max-width: 1025px) {
-    padding: 57px 24px 100px;
-  }
 
   &__wrapper {
     margin: 0 auto;

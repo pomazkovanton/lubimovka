@@ -1,0 +1,11 @@
+.main-grid {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+
+  @media screen and (max-width: 769px) {
+    padding: 100px 0;
+    gap: 100px;
+  }
+}
