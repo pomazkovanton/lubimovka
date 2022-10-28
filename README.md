@@ -35,7 +35,6 @@ https://pomazkovanton.github.io/lubimovka/
 ## Создано в соавторстве
 
 - 👨‍💻 [Антон Помазков](https://github.com/pomazkovanton)
-- 👩‍💻 [Анастасия Волокитина](https://github.com/Anastasiy-alt)
 - 👨‍💻 [Василий Раздорский](https://github.com/VasilyRazdorsky)
 - 👨‍💻 [Дмитрий Ильин](https://github.com/Ilin-Dmitry)
 - 👨‍💻 [Евгений Женченко](https://github.com/Frosteel27)
