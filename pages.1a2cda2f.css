@@ -171,9 +171,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   appearance: button;
 }
 
@@ -181,9 +181,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -192,9 +192,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -238,8 +238,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type='checkbox'],
-[type='radio'] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -247,8 +247,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -256,7 +256,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
+[type=search] {
   appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -264,7 +264,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type='search']::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   appearance: none;
 }
 
@@ -314,22 +314,22 @@ template {
   --accent-bg-color: rgb(183 192 157);
   --main-dark-color: rgb(36 36 36);
   --main-light-color: rgb(255 255 255);
-  --main-font: 'NeueMachina', 'Arial', sans-serif;
-  --second-font: 'Formular', 'Arial', sans-serif;
+  --main-font: "NeueMachina", "Arial", sans-serif;
+  --second-font: "Formular", "Arial", sans-serif;
 }
 
 @font-face {
-  font-family: 'Formular';
+  font-family: "Formular";
   font-weight: 300;
   font-style: normal;
-  src: url('/formular-light.66e5e21b.woff2') format('woff2'), url('/formular-light.28397d54.woff') format('woff');
+  src: url("/formular-light.66e5e21b.woff2") format("woff2"), url("/formular-light.28397d54.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: 'NeueMachina';
+  font-family: "NeueMachina";
   font-weight: 400;
   font-style: normal;
-  src: url('/PPNeueMachina-Regular.b2a90592.woff2') format('woff2'), url('/PPNeueMachina-Regular.129423ad.woff') format('woff');
+  src: url("/PPNeueMachina-Regular.b2a90592.woff2") format("woff2"), url("/PPNeueMachina-Regular.129423ad.woff") format("woff");
   font-display: swap;
 }
 .text {
@@ -377,7 +377,7 @@ template {
   left: -10px;
   width: 0.6em;
   height: 1.6em;
-  content: '';
+  content: "";
   border: 1px solid var(--main-dark-color);
   border-right: none;
   border-top-left-radius: 200% 100%;
@@ -389,7 +389,7 @@ template {
   right: -10px;
   width: 0.6em;
   height: 1.6em;
-  content: '';
+  content: "";
   border: 1px solid var(--main-dark-color);
   border-left: none;
   border-top-right-radius: 200% 100%;
@@ -405,7 +405,7 @@ template {
   left: -10px;
   width: 0.6em;
   height: 1.6em;
-  content: '';
+  content: "";
   border: 1px solid var(--main-dark-color);
   border-right: none;
   border-top-left-radius: 200% 100%;
@@ -417,7 +417,7 @@ template {
   right: -10px;
   width: 0.6em;
   height: 1.6em;
-  content: '';
+  content: "";
   border: 1px solid var(--main-dark-color);
   border-left: none;
   border-top-right-radius: 200% 100%;
@@ -479,7 +479,7 @@ template {
   left: 0;
   width: 0;
   height: 100%;
-  content: '';
+  content: "";
   background-color: var(--main-dark-color);
   transition: all 0.6s ease;
 }
@@ -668,6 +668,19 @@ template {
   background-color: var(--main-bg-color);
 }
 
+.main-grid {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+@media screen and (max-width: 769px) {
+  .main-grid {
+    padding: 100px 0;
+    gap: 100px;
+  }
+}
+
 .header {
   min-width: 414px;
   border-bottom: 1px solid var(--main-dark-color);
@@ -787,14 +800,13 @@ template {
   position: relative;
   display: none;
 }
-.header__nav-ico-cross::after,
-.header__nav-ico-cross::before {
+.header__nav-ico-cross::after, .header__nav-ico-cross::before {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 26px;
   height: 1px;
-  content: '';
+  content: "";
   background-color: var(--main-dark-color);
 }
 .header__nav-ico-cross::after {
@@ -853,7 +865,7 @@ template {
 }
 .hero__title {
   max-width: 450px;
-  grid-column: 2 / span 1;
+  grid-column: 2/span 1;
 }
 @media screen and (max-width: 1025px) {
   .hero__title {
@@ -864,7 +876,7 @@ template {
 }
 .hero__text {
   max-width: 420px;
-  grid-row: 2 / span 1;
+  grid-row: 2/span 1;
   justify-self: end;
 }
 @media screen and (max-width: 1025px) {
@@ -881,8 +893,8 @@ template {
   width: 100%;
   max-width: 720px;
   height: auto;
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
 }
 @media screen and (max-width: 1025px) {
   .hero__image {
@@ -915,14 +927,9 @@ template {
 }
 
 .single-video {
-  padding: 98px 24px;
+  padding: 0 24px;
   box-sizing: border-box;
   min-width: 414px;
-}
-@media screen and (max-width: 1025px) {
-  .single-video {
-    padding: 57px 24px 100px;
-  }
 }
 .single-video__wrapper {
   margin: 0 auto;
@@ -946,13 +953,7 @@ template {
 }
 
 .gallery {
-  margin-top: 145px;
   min-width: 414px;
-}
-@media screen and (max-width: 769px) {
-  .gallery {
-    margin-top: 100px;
-  }
 }
 @media screen and (max-width: 769px) {
   .gallery__title {
@@ -1125,7 +1126,7 @@ template {
 
 .cooperation {
   margin: auto;
-  padding: 100px 24px 170px 59px;
+  padding: 25px 24px 0 59px;
   display: flex;
   box-sizing: border-box;
   min-width: 414px;
@@ -1135,8 +1136,6 @@ template {
 }
 @media screen and (max-width: 769px) {
   .cooperation {
-    padding-top: 80px;
-    padding-bottom: 100px;
     align-items: flex-start;
   }
 }
