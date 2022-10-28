@@ -1,3 +1,28 @@
 @import '../vendor/vendor';
 @import '../mixins/mixins';
 @import '../common/common';
+
+// UI - элементы
+@import '../components/UI/text';
+@import '../components/UI/nav-link';
+@import '../components/UI/title';
+@import '../components/UI/button';
+@import '../components/UI/video';
+
+// Кастомные элементы
+@import '../components/card-piece/card-piece';
+@import '../components/card-show/card-show';
+
+// Секции страницы
+@import '../components/page';
+@import '../components/main-grid';
+@import '../components/header';
+@import '../components/hero';
+@import '../components/about';
+@import '../components/single-video';
+@import '../components/gallery';
+@import '../components/show';
+@import '../components/pieces';
+@import '../components/subscribe';
+@import '../components/cooperation';
+@import '../components/footer';

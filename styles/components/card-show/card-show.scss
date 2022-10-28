@@ -1,0 +1,68 @@
+.card-show {
+  display: inline-flex;
+  overflow: hidden;
+  max-width: 420px;
+  font-family: var(--second-font);
+  color: var(--main-dark-color);
+
+  @media screen and (max-width: 769px) {
+    & {
+      margin-top: 30px;
+    }
+  }
+
+  &__poster {
+    width: 120px;
+    height: 161px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__info {
+    margin-left: 31px;
+    max-width: 269px;
+  }
+
+  &__date {
+    display: flex;
+    max-width: 196px;
+    justify-content: space-between;
+
+    .text {
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+  }
+
+  &__authors {
+    padding-left: 50px;
+    text-indent: -20px;
+  }
+
+  &__description {
+    margin: 0;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.21;
+    white-space: pre-line;
+  }
+
+  &__links {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+
+    a {
+      width: 100%;
+    }
+  }
+}

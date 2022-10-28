@@ -1,0 +1,80 @@
+.button {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  width: max-content;
+  align-items: center;
+  font-family: var(--second-font);
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-dark-color);
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    content: '';
+    background-color: var(--main-dark-color);
+    transition: all 0.6s ease;
+  }
+
+  &:hover {
+    color: var(--main-light-color);
+
+    &::before {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &_size {
+    &_small {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      font-size: 16px;
+      line-height: 14px;
+      border-bottom: 1px solid var(--main-dark-color);
+      gap: 5px;
+    }
+
+    &_big {
+      padding: 15px 16px;
+      width: 100%;
+      justify-content: space-between;
+      border-top: 1px solid var(--main-dark-color);
+    }
+  }
+
+  &_border {
+    &_right {
+      padding-left: 10px;
+      text-align: right;
+      border-right: 1px solid var(--main-dark-color);
+    }
+
+    &_left {
+      padding-right: 10px;
+      border-left: 1px solid var(--main-dark-color);
+    }
+
+    &_full {
+      padding-left: 20px;
+      border: 1px solid var(--main-dark-color);
+    }
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}

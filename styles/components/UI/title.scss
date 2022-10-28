@@ -1,0 +1,31 @@
+.title {
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-dark-color);
+
+  &_size {
+    &_l {
+      font-size: 72px;
+      line-height: 70px;
+    }
+
+    &_m {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &_s {
+      font-size: 36px;
+      line-height: 38px;
+    }
+  }
+
+  &_center {
+    margin: auto;
+    padding-right: 145px;
+    box-sizing: border-box;
+    max-width: 715px;
+  }
+}

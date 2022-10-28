@@ -1,0 +1,148 @@
+.header {
+  min-width: 414px;
+  border-bottom: 1px solid var(--main-dark-color);
+
+  @media screen and (max-width: 1025px) {
+    border: none;
+  }
+
+  &__container {
+    margin: auto;
+    padding-top: 11px;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    max-width: 1390px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1025px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: 1025px) {
+      display: none;
+      flex-basis: 100%;
+    }
+
+    &_opened {
+      display: block;
+    }
+  }
+
+  &__nav-list {
+    margin: 0;
+    padding: 14px 25px 14px 43px;
+    display: flex;
+    list-style: none;
+    gap: 44px;
+
+    @media screen and (max-width: 1025px) {
+      padding-top: 50px;
+      padding-left: 0;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__logo {
+    width: 43px;
+    height: 35px;
+    font-size: 0;
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+
+    @media screen and (max-width: 1025px) {
+      order: -1;
+    }
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  &__social {
+    margin: 0;
+    padding: 14px 25px;
+    display: flex;
+    list-style: none;
+    border-left: 1px solid var(--main-dark-color);
+    border-right: 1px solid var(--main-dark-color);
+    gap: 16px;
+
+    @media screen and (max-width: 1410px) {
+      border-right: none;
+    }
+
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__support {
+    @media screen and (max-width: 1410px) {
+      display: none;
+    }
+  }
+
+  &__nav-btn {
+    z-index: 1;
+    padding: 0;
+    display: none;
+    width: 31px;
+    height: 19px;
+    background-color: transparent;
+    border: none;
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+
+    @media screen and (max-width: 1025px) {
+      display: block;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__nav-ico-menu {
+    width: 31px;
+    height: 1px;
+    background-color: var(--main-dark-color);
+    box-shadow: 0 -8px var(--main-dark-color), 0 8px var(--main-dark-color);
+
+    &_show {
+      display: block;
+    }
+  }
+
+  &__nav-ico-cross {
+    position: relative;
+    display: none;
+
+    &::after,
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 26px;
+      height: 1px;
+      content: '';
+      background-color: var(--main-dark-color);
+    }
+
+    &::after {
+      transform: translate(-50%, 0) rotate(-45deg);
+    }
+
+    &::before {
+      transform: translate(-50%, 0) rotate(45deg);
+    }
+
+    &_show {
+      display: block;
+    }
+  }
+}
